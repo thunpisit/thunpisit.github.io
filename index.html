@@ -1,1 +1,54 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <!--    Velocity.js    -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/velocity.ui.min.js"></script>
+        
+        <style>
+            body {
+              font-family: "Helvetica Neue", Helvetica;
+              width: 90%;
+              font-weight: 200;
+              letter-spacing: 1px;
+              margin: 25px auto 0 auto;
+              background: rgb(234, 235, 235);
+              color: rgb(25, 25, 25);
+            }
+
+            div, p {
+              margin: 0 auto;
+            }
+
+            p {
+              color: rgb(125, 125, 125);
+              font-size: 0.85rem;
+              text-align: center;
+              margin-bottom: 17px;
+            }
+
+            div {
+              width: 35%;
+              overflow: hidden;
+            }
+        </style>
+        <script>
+            // Use the utility function to target a raw DOM element instead of a jQuery object.
+            $.Velocity.animate(document.getElementsByTagName("div"), { opacity: 0 }, 2000);
+
+            // As an additional demonstration, use the "reverse" command on the element.
+            $.Velocity.animate(document.getElementsByTagName("div"), "reverse", 1000);
+        </script>
+    </head>
+    <body>
+        <p>
+          Refresh this page to re-run the demo.
+        </p>
+
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+        </div>
+    </body>
+</html>
