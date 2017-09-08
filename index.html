@@ -38,14 +38,17 @@
                 text-align: center;
             }
             .top-space {
-                padding-top: 120px;
+                padding-top: 140px;
             }
             .logo {
                 height: 80px;
             }
         </style>
         <script>
-            function abracadabra(){
+            function github(){
+                window.location.replace("https://www.github.com/thunpisit");
+            }
+            function personal(){
                 window.location.replace("https://www.thunpisit.com");
             }
         </script>
@@ -61,8 +64,8 @@
                     <strong><h1>thunpisit.git</h1></strong><br>
                     <h4>The culture of pull, commit, and push.</h4><br>
                     <p>This is a github pages personal repository for my Github @thunpisit. Nothing much here maybe check my actual personal website or my actual repositories?</p><br>
-                    <button type="button" class="btn btn btn-outline-dark">Github</button>
-                    <button type="button" class="btn btn btn-outline-dark">Personal site</button>
+                    <button type="button" class="btn btn-outline-primary" onclick="github()">Github</button>
+                    <button type="button" class="btn btn-outline-success" onclick="personal()">Personal site</button>
                 </div>
                 <div class="col-xs-2 col-sm-2 col-md-3 col-lg-3"></div>
             </div>
