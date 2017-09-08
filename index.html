@@ -16,85 +16,65 @@
         <meta property="og:url" content="https://thunpisit.github.io" />
         <meta property="og:image" content="https://thunpisit.github.io/images/og.png" />
         
-        <!-- font-awesome -->
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
         
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
+        
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         
-        <!-- Google fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        
         <style>
-/*
-            @font-face {
-                font-family: "San Francisco";
-                font-weight: 200;
-                src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
-            }
-*/
             * {
-/*                font-family: "San Francisco";*/
-                font-family: 'Open Sans', sans-serif;
-                background-color: #F2F2F2;
+                background-color: white;
             }
-            .logo {
-                height: 50px;
-                text-align: center;
+            h1 {
+                font-family: 'San Francisco','Montserrat', sans-serif;
+            }
+            h3 {
+                font-family: 'San Francisco','Montserrat', sans-serif;
+            }
+            p {
+                font-family: 'San Francisco','Montserrat', sans-serif;
             }
             .center {
                 text-align: center;
             }
-            .headboard {
-                padding-top: 100px;
-            }
-            .midboard {
-                padding-top: 30px;
+            .top-space {
+                padding-top: 150px;
             }
             .button {
                 
             }
-            .button:hover {
-                
-            }
-            .button:active {
-                
-            }
-            .button:visited {
-                
-            }
         </style>
         <script>
-            function github() {
-                window.location.href = "https://www.github.com/thunpisit";
-            }
-            function website() {
-                window.location.href = "https://www.thunpisit.com";
+            function abracadabra(){
+                window.location.replace("https://www.thunpisit.com");
             }
         </script>
     </head>
-    <body class="container-fluid">
-        <div class="row headboard">
-            <div class="col-3 col-sm-2 col-md-3 col-lg-4 col-xl-5"></div>
-            <div class="col-6 col-sm-8 col-md-6 col-lg-4 col-xl-2 center">
-                <img class="logo" src="images/thunpisit-git-logo.svg"><br><br>
-                <strong><h1>thunpisit.git</h1></strong>
-                <h4>the culture of pull commit push</h4><br>
-                <p>this is the personal git repository about page of thunpisit amnuaikiatloet (fluke). nothing much here maybe check his website or his actual repo?</p>
+    
+    <body>
+    
+        <div class="container-fluid">
+            <div class="row top-space">
+                <div class="col-xs-2 col-sm-2 col-md-3 col-lg-4"></div>
+                <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4 text-center">
+                    <h1>thunpisit.git</h1>
+                    <h3>The culture of pull, commit, and push.</h3>
+                    <p>This is a github pages personal repository for my Github @thunpisit. Nothing much here maybe check my actual personal website or my actual repositories?</p>
+                    <button type="button" class="btn btn-primary"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Github</button>
+                    <button type="button" class="btn btn-primary"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Website</button>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-3 col-lg-4"></div>
             </div>
-            <div class="col-3 col-sm-2 col-md-3 col-lg-4 col-xl-5"></div>
         </div>
-        <div class="row midboard">
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 center">
-                <button onclick="github()"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Github</button>
-                <button onclick="website()"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Website</button>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
-        </div>
+        
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </body>
 </html>
